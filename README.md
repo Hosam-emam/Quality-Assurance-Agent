@@ -1,6 +1,6 @@
 # Quality Assurance Agent
 
-![Quality Assurance Agent System](assets/full%20system.png)
+![Quality Assurance Agent System](assets/Full%20System.png)
 
 A small project for a Quality Assurance Agent. This system is designed to ensure the quality and reliability of software projects by automating various quality assurance tasks. It provides tools and agents to monitor, analyze, and improve the overall quality of the codebase and processes.
 
