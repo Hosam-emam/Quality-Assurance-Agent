@@ -14,3 +14,9 @@ wheels/
 
 # Logs
 *logs/
+
+# VsCode settings
+.vscode/
+
+# Excal Drawings
+*.excalidraw

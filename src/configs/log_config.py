@@ -1,10 +1,9 @@
-import logging
-from logging import Logger, Formatter
-from logging.handlers import RotatingFileHandler
 from functools import lru_cache
 from typing import Literal
 from enum import StrEnum
-from src import settings
+import logging
+from logging import Logger, Formatter
+from logging.handlers import RotatingFileHandler
 import os
 
 class LoggingLevels(StrEnum):
@@ -22,8 +21,10 @@ def setup_logger(logger_name: str, level: Literal["info", "debug"] = "info") -> 
     - level ("info" | "debug"): logging level in which the system will
 
     ### Returns:
-        The logger
+        The logger instance
     """
+    # Lazy import to avoid circular dependency
+    from src import settings
 
     os.makedirs(settings.LOGS_DIR, exist_ok=True)
 
